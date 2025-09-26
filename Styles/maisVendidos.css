@@ -1,0 +1,45 @@
+.maisVendidos__titulo {
+    background-color: var(--branco);
+    color: var(--laranja);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper {
+    display: flex;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.maisVendidos-next,
+.maisVendidos-prev {
+    display: none;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-ajustar {
+  display: flex;
+  margin: 1.5em 0 0.5em 0;
+}
+
+@media screen and (min-width: 1024px){  
+    .maisVendidos__titulo {
+      font-size: 26px;
+      margin-top: 2em;
+    }
+
+    .maisVendidos-next,
+    .maisVendidos-prev {
+      color: var(--branco);
+      background: var(--azul-gradiante);
+      display: block;
+    }
+}

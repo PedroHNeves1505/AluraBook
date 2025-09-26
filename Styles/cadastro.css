@@ -1,0 +1,102 @@
+.cadastro {
+    padding: 1em;
+    margin-bottom: 1em ;
+    background-color: var(--branco);
+}
+
+.cadastro__titulo {
+    background: var(--azul-gradiante);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cadastro__texto {
+    background: var(--azul-gradiante);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.cadastro__inserir {
+    background: url(../assets/Logos/Email.svg);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;
+}
+
+.cadastro__inserir::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    background: var(--azul-gradiante);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cadastro__inserir:not(:placeholder-shown) {
+    background-image: none;
+} 
+
+.cadastro__inserir-container {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+    .cadastro {
+        display: flex;
+        align-items: center;
+        padding: 3em 0;
+    }
+
+    .cadastro-info {
+        padding: 0 4em;
+    }
+
+    .cadastro__titulo {
+        font-size: 24px;
+    }
+
+    .cadastro__inserir {
+        width: 70%;
+        background-position: 40px center;
+    }
+
+    .cadastro__inserir-container {
+     flex: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .cadastro {
+        justify-content: space-between;
+    }
+
+    .cadastro-info {
+        flex: 1;
+    }
+
+    .cadastro__titulo {
+        margin-left: 60%;
+    }
+
+    .cadastro__texto {
+        margin-left: 60%;
+    }
+
+    .cadastro__inserir {
+        width: 40%;
+        background-position: 50px center;
+        margin-right: 60%;
+    }
+
+
+}

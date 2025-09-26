@@ -1,0 +1,157 @@
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/Logos/Menu.svg);
+    display: inline-block;
+    margin: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__titulo {
+    display: none;
+}
+
+.container__imagem {
+    padding: 1em;
+    margin-bottom: 6px;
+}
+
+.container__imagem-texto {
+    display: none;
+}
+
+.ajuste {
+    padding: 0;
+    margin: 12px;
+}
+
+.container__botao {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+.lista__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    max-width: 100vw;
+}
+
+.lista__menu__titulo, .lista__menu__item {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.lista__menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista__menu__link {
+  background: var(--azul-gradiante);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+
+.container__botao:checked~.lista__menu {
+    display: block;
+}
+
+@media screen and (min-width: 1024px){
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .container__titulo {
+        font-style: var(--fonte-secundaria);
+        font-weight: 400;
+        font-size: 30px;
+        display: block;
+    }
+
+    .container__titulo-negrito {
+        font-weight: 700;
+    }
+
+    .container__imagem-texto {
+        display: none;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    .opcoes__botao:checked ~ .lista__menu {
+        display: block;
+        width: auto;
+    }
+
+    .lista__menu__link {
+        background-color: var(--branco);
+    }
+
+    .opcoes__link {
+        color: var(--preto);
+        text-decoration: none;
+    }
+
+    .container__imagem {
+        padding: 0 1.5em;
+    }
+
+    .favorito {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__imagem {
+        margin-left: 3.5em;
+    }
+
+    .container__imagem-texto {
+        display: inline-flex;
+        align-items: center;
+        vertical-align:65%;
+        font-size: 20px;
+        color: var(--preto);
+        margin-right: 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+}
+
